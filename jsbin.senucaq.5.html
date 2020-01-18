@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by LengyelAnita87 (http://jsbin.com/senucaq/5/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="hu">
+<head>
+<meta name="description" content="Azulejo with Bootstrap">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Great+Vibes&display=swap" rel="stylesheet">  
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>JS Bin</title>
+<style id="jsbin-css">
+/* === GENERAL STYLES === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C2C6CF;
+  color: #14264D;
+}
+
+p,h1,h2,h3,img,a,table {
+  margin-bottom: 10px;
+}
+
+
+h1,h2,h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: Courgette, 'Times New Roman', cursive;
+  }
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* === HEADER STYLES === */
+
+header {
+  background: url("https://cdn.pixabay.com/photo/2017/11/28/22/19/portugal-2984814_960_720.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  display: table;
+}
+.header-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header-text {
+  background: rgba(0,20,90,.8);
+  color: rgb(255,255,255);
+  padding: 3rem;
+  border-radius: 10px;
+  width: 50%;
+  min-width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+/* === CONTENT STYLES === */
+
+.main-text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* === TARTALOMJEGYZÉK STYLES === */
+
+.index {
+  margin-bottom: 15px;
+}
+
+.list-goup-item {
+  display: block;
+  color: #14264D;
+}
+
+.list-group-item:hover {
+  color: #0653FA;
+}
+
+/* === NEVÉNEK ERETEDETe STYLES === */
+/* === A tÁblázat még kicsúszik a széességből, ha nagyon keskeny a képernyő === */
+
+table {
+  max-width: 100%;
+}
+
+th {
+  font-weight: 700;
+}
+
+th,td {
+  padding: 5px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* === ELTERJEDÉSE, HÍRES ÉPÜLETEK STYLES  === */
+
+.maps,.buildings {
+  text-align: center;
+}
+
+.photos {
+  margin-bottom: 0;
+}
+
+/* === FOOTER STYLES === */
+
+footer {
+  background-color: #14264D;
+  color: rgb(255,255,255);
+  text-align: center;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+  <div class="header-wrapper">
+    <div class="header-text text-center">
+      <h1>Azulejo</h1>
+      <p>Mór csempeművészet</p>
+    </div>
+  </div>
+</header>
+<div class="container-fluid">
+<div class="content">
+  <div class="row jumbotron text-justify">
+  <p>Az azulejo egy jellegzetes, arab, spanyol és portugál nyelvterületen elterjedt csempe. Jellegzetessége a mintákat elválasztó, kontúrrajzot adó határvonalak árkolt kialakítása. Spanyolországban főleg Andalúziában, Alicante környékén (például Alteában) és Katalóniában népszerű. Mindenütt megtalálni Portugáliában, ahol az ország legjellemzőbb díszítő elemének tekinthető: nemcsak a frízek és a nagy faliképek számítanak közönségesnek, de medálnak is hordják. Dél-Amerikába portugál és spanyol közvetítéssel került át – olyannyira, hogy portugálok mára Brazíliából importálják a többszínű, virágokkal és indákkal díszített azulejokat</p>
+  </div>
+  <div class="row main-text text-justify">
+    <div class="row index">
+      <h2>Tartalomjegyzék</h2>
+      <div class="list-group">
+        <a href="#gyartas" class="list-goup-item">Gyártása, fejlődése</a>
+        <a href="#nev" class="list-goup-item">Nevének eredete</a>
+        <a href="#elterjedes" class="list-goup-item">Elterjedése</a>
+        <a href="#epuletek" class="list-goup-item">Híresebb azulejoval díszített épületek</a>
+      </div>
+    </div>
+  <div class="row">
+    <div class="panel panel-active">
+      <div  class="panel-heading">
+        <h2 class="panel-title" id="gyartas">Gyártása, fejlődése</h2>
+      </div>
+      <div class="panel-body">
+        <p>Az azulejo mázas beltéri vagy kültéri csempe. Gyártását Kínában fejlesztették ki; az arabok a 12. században ismerték meg, majd a 13. század végén terjesztették el Európában. Használatát nem a divat szeszélyei indokolták, hanem az a tény, hogy a csempeborítás jó hőszigetelő; enyhíti a nyári hőséget. Az agyagból készült lapokat a mesterek mázzal vonták be, a kemencében és 24 órán át 900 °C-on égették, majd egy napig hűlni hagyták, hogy maradandó legyen.
+
+A praktikus szempontok mellett már a kínaiak figyeltek a csempék művészi kialakítására. Az arabok – egyes elképzelések szerint – a bizánci mozaikokéhoz mérhető látványt próbáltak az új technikával elérni. Eredetileg csak a kobaltkék árnyalataival mintázták, majd különféle egyéb fémeket (cink, mangán, réz, vas) tartalmazó mázakkal sokszínűvé tették.
+
+A kínaiak formai megkötések nélkül használták, a móroknál azonban – mivel az iszlám tiltja az ember- és állatábrázolást – a geometriai minták kerültek előtérbe. Ezt a hagyományt spanyol és portugál nyelvterületen is átvették, a reconquista után azonban a különböző életképek és biblikus jelenetek ábrázolása is divatba jött.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel panel-active">
+      <div  class="panel-heading">
+        <h2 class="panel-title" id="nev">Nevének eredete</h2>
+      </div>
+      <div class="panel-body">
+        <p>Nevét a különböző források kétféleképpen származtatják:</p>
+        <div class="col-sm-6 col-sm-offset-3">
+          <table class=" table-bordered table-hover table-responsive">
+          <tr>
+            <th>Szó eredete</th>
+            <th>Származtatás</th>
+            <th>Jelentés</th>
+          </tr>
+          <tr>
+            <td>arab</td>
+            <td><i>al-zulaich</i></td>
+            <td>apró, színes kavics</td>
+          </tr>
+          <tr>
+          <td>spanyol</td>
+          <td><i>azul</i></td>
+          <td>kék</td>
+          </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel panel-active">
+      <div  class="panel-heading">
+        <h2 class="panel-title" id="elterjedes">Elterjedése</h2>
+      </div>
+      <div class="panel-body maps">
+        <div class="col-sm-4">
+          <p><strong>Portugália</strong> és a volt portugál gyarmatok (pl. Brazília)</p>
+          <img class="img-responsive"  src="https://cdn.pixabay.com/photo/2016/06/30/15/34/portugal-1489214_960_720.png" alt="Portugália térképe">
+        </div>
+        <div class="col-sm-4">
+     <p><strong>Spanyolország</strong> és a volt spanyol gyarmatok (Pl. Mexikó)</p>
+          <img class="img-responsive" src="https://cdn.pixabay.com/photo/2016/07/06/14/37/spain-1500646_960_720.png" alt="Spanyolország térképe">
+        </div>
+        <div class="col-sm-4">
+          <p><strong>Marokkó</strong> és Észak-Afrika</p>
+          <img class="img-responsive" src="https://cdn.pixabay.com/photo/2016/10/21/19/31/morocco-1758965_960_720.png" alt="Marokkó térképe">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel panel-active">
+      <div class="panel-heading">
+        <h2 class="panel-title photos" id="epuletek">Híresebb azulejoval díszített épületek</h2>
+      </div>
+      <div class="panel-body">
+        <div class="row buildings">
+          <div class="col-sm-4">
+            <h3>Nagymecset</h3>
+            <p>Cordóba, Spanyolország</p>
+            <img class="img-responsive img-thumbnail" src="https://cdn.pixabay.com/photo/2014/09/27/01/23/cordoba-463018_960_720.jpg" alt="Cordóbai nagymecset">
+          </div>
+          <div class="col-sm-4">
+            <h3>Alhambra</h3>
+            <p>Granada, Spanyolország</p>
+            <img class="img-responsive img-thumbnail" src="https://cdn.pixabay.com/photo/2019/06/08/21/35/alhambra-4261038__340.jpg" alt="Alhambra">
+          </div>
+          <div class="col-sm-4">
+            <h3>Casa Vicens</h3>
+            <p>Barcelona, Spanyolország</p>
+            <img class="img-responsive img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Casavicens.jpg" alt="Casa Vicens">
+          </div>
+        </div>
+        <div class="row buildings">
+          <div class="col-sm-4 col-sm-offset-2">
+            <h3>Csempés ház</h3>
+            <p>Mexikóváros, Mexikó</p>
+            <img class="img-responsive img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Casa_de_Azulejos_3.jpg/1024px-Casa_de_Azulejos_3.jpg" alt="Csempés ház">
+          </div>
+          <div class="col-sm-4">
+            <h3>Csempemúzeum/ Museu do Azulejo</h3>
+            <p>Lisszabon, Portugália</p>
+            <img class="img-responsive img-thumbnail" src="https://d1u4v68pfiv879.cloudfront.net/media/2154/d-data-hosts-gmc-devfogmcblissapplicationscom-content-content-imagens-museu-nacional-do-azulejo-destaques-museu-nacional-azulejo_635x400.jpg" alt="Museo do Azulejo">
+          </div>   
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+</div>
+</div>
+<footer>
+  <p><small>Forrás: <a href="https://hu.wikipedia.org/wiki/Azulejo">Wikipedia</a>
+    </small></p>
+</footer>
+</body>
+</html>
